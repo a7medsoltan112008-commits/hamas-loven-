@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>لحماس من قلبي 🌙💜</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1026;--card:#141a3a;--line:#2b3566;--text:#f4f1ff;--soft:#b9b7d9;--gold:#ffd98a;--pink:#ff9ec4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Cairo',sans-serif;background:radial-gradient(ellipse at top,#1a2150,var(--bg) 60%);color:var(--text);min-height:100vh;line-height:2;overflow-x:hidden}
+canvas#sky{position:fixed;inset:0;z-index:0;pointer-events:none}
+.moon{position:fixed;top:30px;left:30px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff,#d9d6f5);box-shadow:0 0 60px 20px rgba(200,195,255,.35);z-index:0}
+main{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:60px 18px 100px}
+header{text-align:center;margin-bottom:40px}
+.icons{font-size:44px}
+.sub{letter-spacing:2px;font-size:13px;color:var(--soft);margin:8px 0 24px;direction:ltr}
+h1{font-size:clamp(34px,8vw,60px);font-weight:800;text-shadow:0 0 25px rgba(255,255,255,.4)}
+.lead{color:var(--soft);margin:14px 0 20px}
+.date{display:inline-block;border:1px solid var(--line);border-radius:30px;padding:6px 22px}
+section{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:28px 22px;margin-bottom:28px}
+h2{text-align:center;font-size:24px;margin-bottom:14px}
+.btn{font-family:inherit;font-size:17px;font-weight:600;background:#fff;color:#1a2150;border:0;border-radius:30px;padding:10px 28px;cursor:pointer;display:block;margin:14px auto}
+.btn:hover{background:var(--gold)}
+.reveal{display:none;border:1px dashed var(--line);border-radius:20px;padding:22px;margin-top:16px;font-family:'Amiri',serif;font-size:21px;line-height:2.4;white-space:pre-line}
+.reveal.show{display:block;animation:f 1.2s}
+@keyframes f{from{opacity:0}to{opacity:1}}
+.verse{color:var(--gold);text-align:center;margin-top:18px;font-size:23px}
+/* songs */
+.song{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:18px;padding:10px 14px;margin-bottom:10px}
+.song button{width:42px;height:42px;border-radius:50%;border:0;background:var(--pink);font-size:18px;cursor:pointer;flex:none}
+.song span{flex:1}
+/* quiz */
+.q{font-size:20px;text-align:center;margin:12px 0}
+.opts{display:grid;gap:10px}
+.opt{font-family:inherit;font-size:16px;background:transparent;color:var(--text);border:1px solid var(--line);border-radius:16px;padding:10px;cursor:pointer}
+.opt:hover{border-color:var(--pink)}
+.opt.ok{background:#6b3a8a;border-color:var(--pink)}
+.tabs{display:flex;gap:8px;justify-content:center;margin-bottom:10px}
+.tab{font-family:inherit;background:transparent;color:var(--soft);border:1px solid var(--line);border-radius:20px;padding:6px 16px;cursor:pointer}
+.tab.on{background:var(--pink);color:#2a1030}
+.fb{text-align:center;color:var(--gold);min-height:34px}
+#secretIn{width:100%;font-family:inherit;font-size:17px;padding:10px;border-radius:14px;border:1px solid var(--line);background:#0e1330;color:var(--text);text-align:center}
+.heart{position:fixed;bottom:-30px;z-index:0;pointer-events:none;animation:up linear forwards}
+@keyframes up{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+</style>
+</head>
+<body>
+<canvas id="sky"></canvas>
+<div class="moon"></div>
+<main>
+
+<header>
+  <div class="icons">🤍✨🌙</div>
+  <div class="sub">A LITTLE UNIVERSE JUST FOR YOU</div>
+  <h1>لحماس من قلبي 💛</h1>
+  <p class="lead">ليلة هادية، سما مليانة نجوم، وكل حاجة هنا معمولة مخصوص ليكي يا حماس 🤍</p>
+  <div class="date">📅 يومنا المميز: ٦ / ٦ / ٢٠٢٦</div>
+</header>
+
+<!-- الرسالة الطويلة -->
+<section>
+  <h2>💌 رسالة مخصوصة ليكي</h2>
+  <p style="text-align:center;color:var(--soft)">في كلام بيتقال مرة، وفي كلام بنحب نرجع نقراه كل شوية عشان يخلّي قلبنا مبسوط.</p>
+  <button class="btn" onclick="toggle('letter')">افتحي رسالتك 💜</button>
+  <div class="reveal" id="letter">يا حماس، الكلام ده ليكي إنتِ وبس 🩷
+
+من أول يوم دخلتي فيه حياتي، حسّيت إن الدنيا بقت أهدى وأجمل. إنتِ مش مجرد حد بحبه، إنتِ الراحة اللي برجعلها لما التعب يزيد، وإنتِ الضحكة اللي بتصلّح يومي مهما كان وحش.
+
+نفسي أقولك إني ممتن لكل لحظة. لكل مرة سمعتيني فيها من غير ما أطلب، ولكل مرة طمنتيني بكلمة بسيطة بس كانت عندي بالدنيا. إنتِ بتشوفي فيا حاجات أنا نفسي مش شايفها، وبتخليني أحب نفسي أكتر عشان إنتِ بتحبيني.
+
+بحب طريقتك في الكلام، وبحب ضحكتك، وبحب حتى لما بتزعلي مني وتحاولي تخبّي زعلك وعينيكي بتفضحك. بحب إنك إنتِ، من غير ما تحاولي تبقي حد تاني.
+
+أوقات بقعد لوحدي وأفكر: أنا إزاي كنت عايش قبلك؟ والإجابة إني كنت ناقص وأنا مش واخد بالي. إنتِ كمّلتيني يا حماس.
+
+أوعدك إني أكون سندك في الأيام الحلوة قبل الصعبة. أوعدك أسمعك، وأحاول أفهمك، وأتعلم منك كل يوم. وأوعدك إن مهما حصل بينا، قلبي هيفضل يرجعلك.
+
+بحلم بيوم نقعد فيه سوا، في بيت صغير مليان ضحك وحب وهدوء، ونفتكر الأيام دي ونقول: الحمد لله، ربنا جمعنا.
+
+بحبك يا حماس، بحبك أكتر من أي كلمة تقدر تتكتب، وأكتر من أي نجمة في السما اللي فوقنا دلوقتي 🌙✨
+
+ودايمًا… ليكي مني أحلى حاجة في الدنيا 💛</div>
+</section>
+
+<!-- الأغاني -->
+<section>
+  <h2>🎧 أغانينا</h2>
+  <p style="text-align:center;color:var(--soft);margin-bottom:12px">دوسي على زرار التشغيل واسمعي أغانينا 🎶</p>
+  <div id="songs"></div>
+</section>
+
+<!-- الأسئلة -->
+<section>
+  <h2>🎮 لعبة الأسئلة</h2>
+  <div class="tabs">
+    <button class="tab on" onclick="setMode('love',this)">💘 أسئلة حب</button>
+    <button class="tab" onclick="setMode('fun',this)">😂 أسئلة هزار</button>
+  </div>
+  <div class="q" id="q"></div>
+  <div class="opts" id="opts"></div>
+  <div class="fb" id="fb"></div>
+  <button class="btn" onclick="nextQ()">السؤال اللي بعده ➜</button>
+  <div style="text-align:center;color:var(--soft)"><span id="prog"></span></div>
+</section>
+
+<!-- الرسالة السرية -->
+<section>
+  <h2>🔐 الرسالة السرية</h2>
+  <p style="text-align:center;color:var(--soft);margin-bottom:10px">اكتبي الكلمة السرية اللي بينا (تلميح: اسم القمر اللي بنحبه)</p>
+  <input id="secretIn" placeholder="الكلمة السرية…">
+  <button class="btn" onclick="unlock()">افتحي 🔓</button>
+  <div class="reveal" id="secret">يا حماس…
+
+دي الحاجة اللي كنت مخبيها لآخر الصفحة. مش لأني مكسوف، لكن لأن في كلام أحلى لما بيتقال في السر.
+
+أنا مش عايز منك حاجة غير إنك تفضلي زي ما إنتِ. وعايز تعرفي إن كل خطوة بخطوها في حياتي دلوقتي، بفكر فيكي فيها. نجاحي عشانك، وتعبي عشانك، وحلمي الكبير إن اليوم ييجي ونبقى فيه تحت سقف واحد.
+
+لو يوم زعلتي، افتكري إن في حد بيحبك من قلبه. لو يوم حسّيتي إن الدنيا تقيلة، افتكري إني هنا، وإن إيدي دايمًا ممدودة ليكي.
+
+وأنا بدعي ربنا كل يوم يجمعنا على خير، ويرزقنا الستر والسعادة والبيت الهادي.
+
+اللهم اجمع بيننا في الحلال، وبارك لنا في أيامنا، واجعل القادم أجمل من الماضي، وارزقنا قلوبًا مطمئنة وعيونًا قريرة.
+
+<div class="verse">﴿ وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ﴾<br>[الروم: 21]</div>
+<div class="verse">﴿ رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا ﴾<br>[الفرقان: 74]</div>
+
+<div style="text-align:center;margin-top:16px">آمين يا رب 🤍</div></div>
+</section>
+
+</main>
+
+<script>
+// ===== غيّر هنا =====
+const SECRET_WORD = "حماس";   // الكلمة السرية
+const SONGS = [               // الملفات لازم تبقى جوه فولدر songs بنفس الأسماء
+  {t:"شيرين - حب وجنة أنا عشت فيها", f:"MUSIC/H.mp3"}, 
+  {t:"بحبك",           f:"MUSIC/2.mp3"},
+  {t:"رام - صبر / أنت جنان",           f:"MUSIC/3.mp3"},
+  {t:"بعشق🥹",                f:"MUSIC/4.mp3"},
+  {t:"حبيبي وسندي في الدنيا",                f:"MUSIC/5.mp3"},
+  {t:"عوض العمر",                f:"MUSIC/6.mp3"},
+  {t:"قلبي اختارها",                f:"MUSIC/7.mp3"},
+  {t:"😍😍",                f:"MUSIC/8.mp3"},
+];
+const LOVE = [
+  {q:"إيه أكتر حاجة بتحسسك إني بحبك؟",o:[["كلامي الحلو","وأنا مش بخلّي كلامي ينقطع عنك أبدًا 🤍"],["اهتمامي بيكي","اهتمامك عندي أهم من أي حاجة تانية 💜"],["وقوفي جنبك","وهفضل واقف جنبك مهما حصل 🫶"],["كل حاجة","يبقى أنا ناجح في مهمتي 🥹💛"]]},
+  {q:"لو هنقضي يوم كامل سوا، هنعمل إيه؟",o:[["نخرج ونتمشى","وأنا ماسك إيدك طول الطريق 🌙"],["نقعد في البيت ونتفرج","وأنا ساندك على كتفي 🍿"],["نسافر مكان جديد","ونعمل ذكريات ما تتنسيش ✈️"],["أي حاجة المهم معاك","وأنا كمان، المكان مش فارق معاك فيه 🤍"]]},
+  {q:"إيه الحاجة اللي نفسك تسمعيها مني أكتر؟",o:[["بحبك","بحبك يا حماس، ودي مش كلمة، دي حياتي 💗"],["وحشتيني","وحشتيني أكتر مما تتخيلي 🥺"],["أنا فخور بيكي","وأنا فخور بيكي في كل خطوة 🌟"],["إنتِ كل حاجة","وإنتِ فعلًا كل حاجة عندي 💛"]]},
+  {q:"إيه أكتر لحظة بتفتكريها وبتبتسمي؟",o:[["أول مرة اتكلمنا","وأنا لسه فاكرها كأنها امبارح 🌷"],["لما ضحكنا من قلبنا","ضحكتك أحلى صوت سمعته 😍"],["لما حسّيتي بالأمان معايا","وده أغلى حاجة عندي 🤍"],["لسه الأحلى جاي","وأنا مستني معاكي كل الأحلى ✨"]]},
+  {q:"عايزة مستقبلنا يبقى شكله إزاي؟",o:[["بيت هادي ودافي","هنبنيه سوا بإذن الله 🏡"],["سفر وحاجات حلوة كتير","هنلف الدنيا سوا ✈️"],["أمان وراحة بال","وده أول وعد ليكي 🫶"],["كل ده وأكتر","آمين، ويارب يكتبه لنا 🤲"]]}
+];
+const FUN = [
+  {q:"لو زعلتي مني، أصالحك بإيه؟",o:[["شوكولاتة","عليّا شوكولاتة الدنيا كلها 🍫"],["وردة","هجيبلك بوكيه كامل 🌹"],["حضن","الحضن جاهز في أي وقت 🤗"],["أسكت وأسيبك شوية","لا أنا مقدرش أسيبك، هصالحك فورًا 😂"]]},
+  {q:"مين فينا اللي بينام الأول في المكالمة؟",o:[["أنا طبعًا","كنت متأكد 😂 وأنا بسمع نفسك وأنا مبسوط"],["إنتَ","أنا؟! لا إزاي 🙄 ده افتراء"],["الاتنين","نوم جماعي رومانسي 😴💜"],["محدش بينام","سهرانين للصبح زي كل مرة 🌙"]]},
+  {q:"لو بقينا شخصيتين كرتون، هنبقى مين؟",o:[["توم وجيري","وإنتِ طبعًا جيري 😂"],["ميكي وميني","وأنا ميكي اللي بيحبك 🐭💗"],["شخصيات رومانسية","وأنا البطل بتاعك 😎"],["أنا الأميرة وهو الخادم","حاضر يا أميرتي 👑😂"]]},
+  {q:"إيه أكتر حاجة بتضحكك مني؟",o:[["نكتي البايخة","بايخة؟ دي أرقى كوميديا 😤😂"],["غلطاتي","أنا بغلط عشان أضحكك أصلًا 🤭"],["رسايلي","كلها بحب والله 🤍"],["كله","يبقى أنا مهرجك الخاص 🤡💛"]]},
+  {q:"لو معانا ٥٠٠ جنيه وجعانين، هنعمل إيه؟",o:[["نطلب أكل كتير","وأنا هدفع وإنتِ تختاري 🍕"],["نروح مطعم حلو","تمام، بس إنتِ اللي تختاري المطعم 🍽️"],["نشتري آيس كريم ونمشي","أحسن خطة رومانسية 🍦"],["أنا اللي هدفع","لا لا، دي مسؤوليتي 😂💳"]]}
+];
+// =====================
+
+function toggle(id){document.getElementById(id).classList.toggle('show')}
+function unlock(){
+  const v=document.getElementById('secretIn').value.trim();
+  if(v===SECRET_WORD){document.getElementById('secret').classList.add('show');hearts(25)}
+  else alert('لا لا، جربي تاني 😉');
+}
+
+// songs
+const box=document.getElementById('songs');let cur=null;
+SONGS.forEach(s=>{
+  const d=document.createElement('div');d.className='song';
+  d.innerHTML=`<button>▶</button><span>${s.t}</span>`;
+  const a=new Audio(s.f);const b=d.querySelector('button');
+  b.onclick=()=>{
+    if(cur&&cur!==a){cur.pause();document.querySelectorAll('.song button').forEach(x=>x.textContent='▶')}
+    if(a.paused){a.play();cur=a;b.textContent='⏸'}else{a.pause();b.textContent='▶'}
+  };
+  a.onended=()=>b.textContent='▶';
+  box.appendChild(d);
+});
+
+// quiz (هي اللي بتجاوب)
+let mode='love',i=0,done=false;
+function setMode(m,el){mode=m;i=0;document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));el.classList.add('on');render()}
+function render(){
+  const list=mode==='love'?LOVE:FUN,x=list[i%list.length];done=false;
+  document.getElementById('q').textContent=x.q;document.getElementById('fb').textContent='';
+  document.getElementById('prog').textContent='سؤال '+((i%list.length)+1)+' من '+list.length;
+  const o=document.getElementById('opts');o.innerHTML='';
+  x.o.forEach(([t,r])=>{
+    const b=document.createElement('button');b.className='opt';b.textContent=t;
+    b.onclick=()=>{
+      if(done)return;done=true;b.classList.add('ok');
+      document.getElementById('fb').textContent=r;hearts(8);
+    };
+    o.appendChild(b);
+  });
+}
+function nextQ(){i++;render()}
+render();
+
+// hearts
+function hearts(n){
+  for(let k=0;k<n;k++){
+    const h=document.createElement('div');h.className='heart';h.textContent=['💗','💜','🤍','💛'][k%4];
+    h.style.left=Math.random()*100+'vw';h.style.fontSize=(16+Math.random()*20)+'px';
+    h.style.animationDuration=(4+Math.random()*4)+'s';
+    document.body.appendChild(h);setTimeout(()=>h.remove(),8500);
+  }
+}
+setInterval(()=>hearts(1),2500);
+
+// stars
+const c=document.getElementById('sky'),g=c.getContext('2d');let S=[];
+function size(){c.width=innerWidth;c.height=innerHeight;S=Array.from({length:90},()=>({x:Math.random()*c.width,y:Math.random()*c.height,r:Math.random()*1.6+.3,p:Math.random()*6}))}
+size();addEventListener('resize',size);
+(function loop(t){g.clearRect(0,0,c.width,c.height);
+  S.forEach(s=>{g.globalAlpha=.4+.6*Math.abs(Math.sin(t/1200+s.p));g.fillStyle='#fff';g.beginPath();g.arc(s.x,s.y,s.r,0,7);g.fill()});
+  requestAnimationFrame(loop)})(0);
+</script>
+</body>
+</html>
